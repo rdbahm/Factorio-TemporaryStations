@@ -1,0 +1,100 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.5.5
+Date: 2020-05-01
+  Bugfix:
+    - Fixed for .18.22
+---------------------------------------------------------------------------------------------------
+Version: 0.5.4
+Date: 2020-04-15
+  Bugfix:
+    - LTNs event is now registered correctly for pre-existing savegames  
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 2020-04-12
+  Changes:
+    - Compatibility Fix for LTN >= 1.13.0 (patch provided by Optera) 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 2020-02-03
+  Feature:
+    - Added option to automatically open the schedule, when entering your personal train 
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 2020-02-03
+  Bugfix:
+    - Fixed: QoL-TempStations will now load properly for ingame tutorials and scenarios
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2020-01-21
+  Features:
+    - Update to Factorio version 0.18 - no changes
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2019-12-07
+  Bugfix:
+    - Fixed: Messages will no longer be sent to every connected player.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 2019-08-17
+  Features:
+    - Added hotkey support for opening your trains schedule (default: not set)
+    - Added hotkey support for locating your train on the map (default: not set, Inspiration by mod autodrive)
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2019-08-17
+  Features:
+    - Added hotkey support for calling your train (default: not set)
+  Changes:
+    - Moved configuration to Mod Settings. Please verify that the migration successfully moved your settings
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2019-08-14
+  Bugfix:
+    - Fixed crash wwhen other mod guis were opened
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2019-08-14
+  Changes:
+    - This mod got a complete overhaul. Take a look at the changes and new features at https://mods.factorio.com/mod/QoL-TempStations
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 2019-07-25
+
+  Bugfixes:
+    - Fixed compatibility with 0.17.59
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 2019-04-23
+
+  Bugfixes:
+    - TrainSchedule will be resetted properly now
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2019-03-15
+
+  Bugfix:
+    - Savegame compatibility fix
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2019-03-15
+
+  Changes:
+    - Option to enable the toggle shortcut is now a startup setting
+
+  Features:
+    - This mod is now partially multiplayer safe, the shortcut to toggle the new behaviour has to be DISABLED in multiplayer
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2019-03-12
+
+  Bugfixes:
+    - Upon arriving at a temporary station now ALL temporary stations are removed
+
+  Features:
+    - Added a shortcut to toggle vanilla / mod behaviour of temporary stations. Has to be activated in Mod Settings.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2019-03-07
+
+  Features:
+    - initial release

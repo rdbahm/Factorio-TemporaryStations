@@ -1,0 +1,4 @@
+MOD_LOG_RELEASE = 0
+MOD_LOG_DEBUG   = 1
+  
+local log_level = MOD_LOG_RELEASE
