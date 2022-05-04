@@ -7,7 +7,7 @@ global.config = global.config or {
   
   remove_all = true,
   
-  default_conditions = {{type="inactivity", compare_type="and", ticks=300}, {type="passenger_present", compare_type="and"}},
+  default_conditions = {{type="inactivity", compare_type="and", ticks=300}},
   
   search_radius = 20,
   render_target = true,
@@ -70,7 +70,6 @@ local train_state_strings = {
   [defines.train_state.manual_control_stop] = "MANUAL_CONTROL_STOP",
   [defines.train_state.manual_control]      = "MANUAL_CONTROL",
 }
-
 
 function print_train_state(new_state, old_state)
   local message = "TrainState: "
@@ -206,6 +205,19 @@ end
 temp_core.train_state_changed = function(event)
   if global.blacklisted_trains[event.train.id] then
     return
+  end
+
+  -- check if modify temp-station apply only for personal-train
+  if global.config.personal_train_only == true then
+    local is_personal_train = false
+    for _, train in pairs(global.personal_train) do
+      if train == event.train then
+        is_personal_train = true
+      end
+    end
+    if is_personal_train == false then
+      return
+    end
   end
   
   -- check for temporary stations and modify the wait condition  

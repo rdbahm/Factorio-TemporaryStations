@@ -43,10 +43,9 @@ local function mod_update_settings()
   global.config.switch_to_manual = (settings.global["tempstations-behaviour"].value == "switch-to-manual" and true or false)
   global.config.apply_custom_conditions = (settings.global["tempstations-behaviour"].value == "apply-custom-conditions" and true or false)
   global.config.remove_all = settings.global["tempstations-removetemps"].value
-  
   global.config.search_radius = tonumber(settings.global["tempstations-searchradius"].value)
   global.config.render_target = settings.global["tempstations-rendertarget"].value
-  
+  global.config.personal_train_only = settings.global["tempstations-personaltrainonly"].value
   global.config.openschedule = settings.global["tempstations-openschedule"].value
 end
 script.on_event({defines.events.on_runtime_mod_setting_changed}, mod_update_settings) 
